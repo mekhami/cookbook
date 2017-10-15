@@ -34,4 +34,5 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: ./compose/local/frontend/Dockerfile
+    ports:
+      - "8080:8080"
